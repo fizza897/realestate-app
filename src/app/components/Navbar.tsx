@@ -1,24 +1,10 @@
 "use client"
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, Link, Button} from "@nextui-org/react";
 import AcmeLogo from "./AcmeLogo";
 
  function AppNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
-
   return (
     <Navbar className="shadow-md" onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
@@ -59,7 +45,6 @@ import AcmeLogo from "./AcmeLogo";
           </Button>
         </NavbarItem>
       </NavbarContent>
-
     </Navbar>
   );
 }
