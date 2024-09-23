@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, Link, Button} from "@nextui-org/react";
-
+import { HomeModernIcon } from '@heroicons/react/24/solid'
 
  function AppNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -13,7 +13,10 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, Link, 
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit">ACME</p>
+            <Link href={"/"} className="flex items-center text:primary-400 hover:text-primary-600 transition-colors">
+            <HomeModernIcon className="w-16"/>
+          <p className="font-bold text-inherit">ArafatEstate</p>
+            </Link>
         </NavbarBrand>
       </NavbarContent>
 
