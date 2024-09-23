@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, Link, Button} from "@nextui-org/react";
-import AcmeLogo from "./AcmeLogo";
+
 
  function AppNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -13,7 +13,6 @@ import AcmeLogo from "./AcmeLogo";
           className="sm:hidden"
         />
         <NavbarBrand>
-        
           <p className="font-bold text-inherit">ACME</p>
         </NavbarBrand>
       </NavbarContent>
