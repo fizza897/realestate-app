@@ -1,9 +1,12 @@
 "use client"
-import React from "react";
+import React, { ReactNode } from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, Link, Button} from "@nextui-org/react";
 import { HomeModernIcon } from '@heroicons/react/24/solid'
 
- function AppNavbar() {
+interface Props{
+  children :ReactNode
+}
+ function AppNavbar({children}:Props) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <Navbar className="shadow-md" onMenuOpenChange={setIsMenuOpen}>
@@ -24,7 +27,7 @@ import { HomeModernIcon } from '@heroicons/react/24/solid'
         
       </NavbarContent>
       <NavbarContent justify="end">
-       
+       {children}
       </NavbarContent>
     </Navbar>
   );
