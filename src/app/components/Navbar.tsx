@@ -4,9 +4,9 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, Link, 
 import { HomeModernIcon } from '@heroicons/react/24/solid'
 
 interface Props{
-  children :ReactNode
+  children :React.ReactNode
 }
- function AppNavbar({children}:Props) {
+ function AppNavbar({ children }:Props) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <Navbar className="shadow-md" onMenuOpenChange={setIsMenuOpen}>
